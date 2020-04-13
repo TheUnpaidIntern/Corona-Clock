@@ -73,9 +73,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 
     buildHTML(countryName){
+        var title = '';
+
+        if(countryName == 'US'){
+            title = 'USA';
+        } else {
+            title = countryName;
+        }
 
         this.countrySection = '<article id="' + countryName.replace(/\s+/g, '') + '">' + 
-        '<section class="title">' + countryName + '</section> ' + 
+        '<section class="title">' + title + '</section> ' + 
         '<section class="clock">' +
         '<section class ="hand today" ' + countryName.replace(/\s+/g, '') + '-today-hand> </section>' + 
         '<section class ="hand yesterday" ' + countryName.replace(/\s+/g, '') + '-yesterday-hand> </section>' +
