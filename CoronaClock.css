@@ -1,0 +1,158 @@
+.container{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: monospace;
+    justify-content: center;
+}
+
+header {
+    text-align: center;
+    font-family: monospace;
+    font-size: 20pt;
+    color: white;
+    background-color: black;
+    padding: 30px;
+}
+
+footer {
+    text-align: center;
+    font-family: monospace;
+    font-size: 10pt;
+    color: white;
+    background-color: black;
+    padding: 30px;
+
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: grey;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15pt;
+    border: none;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    margin-top: 20px;
+
+}
+
+.title{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+.clock {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid black;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+
+}
+
+.clock::after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.hand {
+    width: 10px;
+    height: 45%;
+    color: black;
+    background-color: black;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom;
+}
+
+.hand.yesterday{
+    --rotation: 0;
+    transform: translateX(-50%) rotate(calc(var(--rotation) *1deg));
+}
+
+.hand.today{
+    --rotation: 0;
+    transform: translateX(-50%) rotate(calc(var(--rotation) *1deg));
+}
+
+.otherData{
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.menu{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 400px;
+    font-family: monospace;
+    justify-content: center;
+}
+
+.box{
+    width: 400px;
+    height: 50px;
+    margin: 20px;
+
+    font-family: monospace;
+    font-size: 20pt;
+    padding-top: 20px;
+    text-align: center;
+    outline: solid black 5px;
+
+}
+
+.dropdown{
+
+}
+
+.dropdown-content{
+    display: none;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+
+}
+
+.dropdown:hover .dropdown-content{
+    display: flex;
+}
+
+.image{
+    background-color: white;
+}
