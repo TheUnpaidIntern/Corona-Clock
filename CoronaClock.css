@@ -25,12 +25,20 @@ footer {
 
 }
 
-a:link {
+a.blackBackground:link {
     color: white;
 }
 
-a:visited {
+a.blackBackground:visited {
     color: grey;
+}
+
+a.whiteBackground:link {
+    color: black;
+}
+
+a.whiteBackground:visited {
+    color: black;
 }
 
 button{
@@ -112,7 +120,7 @@ article{
 
 .otherData{
     position: relative;
-    margin-top: 10px;
+    margin-top: 20px;
     text-align: center;
     font-size: 20px;
 }

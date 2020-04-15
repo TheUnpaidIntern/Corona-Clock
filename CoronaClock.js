@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             }
 
             this.countrySection = '<article id="' + countryName.replace(/\s+/g, '') + '">' + 
-            '<section class="title">' + title + '</section> ' + 
+            '<section class="title">' + '<a class="whiteBackground" href="https://www.worldometers.info/coronavirus/country/' + countryName.replace(/\s+/g, '') + '">' + title + '</a> </section> ' + 
             '<section class="clock">' +
             '<section class ="hand today" ' + countryName.replace(/\s+/g, '') + '-today-hand> </section>' + 
             '<section class ="hand yesterday" ' + countryName.replace(/\s+/g, '') + '-yesterday-hand> </section>' +
