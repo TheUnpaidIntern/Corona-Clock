@@ -42,17 +42,7 @@ a.whiteBackground:visited {
 }
 
 button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 15pt;
-    border: none;
-    color: white;
-    margin: 20px;
-    padding: 10px;
     cursor: pointer;
-
 }
 
 article{
@@ -128,13 +118,14 @@ article{
 .menu{
     background-color: white;
     display: grid;
-    grid-template-columns: 400px;
+    grid-template-columns: 600px;
     font-family: monospace;
     justify-content: center;
+    text-align: center;
 }
 
 .box{
-    width: 400px;
+    width: 500px;
     height: 50px;
     margin: 20px;
 
@@ -147,7 +138,6 @@ article{
 }
 
 .dropdown{
-
 }
 
 .dropdown-content{
@@ -155,6 +145,7 @@ article{
     position: relative;
     z-index: 1;
     justify-content: center;
+    align-items: center;
 
 }
 
@@ -164,4 +155,16 @@ article{
 
 .image{
     background-color: white;
+}
+
+.grid-item{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.button{
+    cursor: pointer;
 }

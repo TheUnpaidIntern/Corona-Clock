@@ -52,16 +52,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
                    this.todayAngle = 90 - (this.differenceAverage0/2);
                    this.yesterdayAngle = -90 - (this.differenceAverage1/2);
 
-                   if (this.todayAngle <= 0){
-                       this.todayAngle = 1;
-                   } else if (this.todayAngle >= 180){
-                    this.todayAngle = 179;
+                   if (this.todayAngle < 3){
+                       this.todayAngle = 3;
+                   } else if (this.todayAngle > 177){
+                    this.todayAngle = 177;
                 }
                 
-                if (this.yesterdayAngle <= -180 ){
-                   this.yesterdayAngle = -179; 
-               } else if (this.yesterdayAngle >= 0){
-                this.yesterdayAngle = -1;
+                if (this.yesterdayAngle < -177 ){
+                   this.yesterdayAngle = -177; 
+               } else if (this.yesterdayAngle > -3){
+                this.yesterdayAngle = -3;
             }
 
             this.refresh();
@@ -130,6 +130,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         const turkey = new Country('Turkey');
         const uk = new Country('United Kingdom');
         const usa = new Country('US');
+
 
     })
 
